@@ -214,7 +214,7 @@ img {
   vertical-align: baseline;
 }
 
-pre {
+code, pre {
   font-family: "Fira Code", "Consolas", "Lucida Console", monospace;
   background: #222222;
   display: block;
@@ -223,17 +223,6 @@ pre {
   padding: 13px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-}
-
-code {
-  font-family: "Fira Code", "Consolas", "Lucida Console", monospace;
-  font-size: 13px;
-  line-height: inherit;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-  word-break: break-all;
-  word-wrap: break-word;
 }
 
 embed,
