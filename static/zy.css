@@ -232,7 +232,7 @@ mark {
 a:link {
   color: rgb(0 128 128);
   text-decoration: none;
-  text-shadow: white;
+  text-shadow: 1px 1px white;
 }
 
 a:hover,
@@ -242,7 +242,7 @@ a:focus {
 
 a:visited {
   color: rgb(128 0 64);
-  text-shadow: white;
+  text-shadow: 1px 1px white;
 }
 
 tr {
