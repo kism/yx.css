@@ -241,8 +241,8 @@ a:focus {
 
 a:visited {
   color: rgb(128 0 64);
-  background-color: #222;
-  display: inline;
+  background-color: #ffffff;
+  display: inline-flex;
 }
 
 tr {
