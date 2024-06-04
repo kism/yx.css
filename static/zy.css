@@ -241,6 +241,7 @@ a:focus {
 
 a:visited {
   color: rgb(128 0 64);
+  background-color: #222;
 }
 
 tr {
