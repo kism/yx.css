@@ -106,15 +106,15 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
-  margin: 16px 0 10px;
+  margin: 16px 0 12px;
   font-style: italic;
 }
 
 h4 {
   font-size: 16px;
-  margin: 16px 0 4px;
+  margin: 16px 0 10px;
   font-weight: 500;
 }
 
@@ -122,19 +122,19 @@ h5 {
   font-style: italic;
   font-weight: 500;
   font-size: 14px;
-  margin: 16px 0 4px;
+  margin: 16px 0 10px;
 }
 
 h6 {
   font-size: 12px;
-  margin: 16px 0 4px;
+  margin: 16px 0 10px;
   font-weight: 500;
 }
 
 p {
   margin: 0;
   margin-bottom: 16px;
-  margin-top: -8px;
+  margin-top: -8px; /* TODO, LMAOOOOO */
 }
 
 ul,
