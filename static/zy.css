@@ -232,6 +232,8 @@ mark {
 a:link {
   color: rgb(0 128 128);
   text-decoration: none;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 
 a:hover,
@@ -240,9 +242,9 @@ a:focus {
 }
 
 a:visited {
-  color: rgb(255 0 255);
-  display: inline-flex;
-
+  color: rgb(128 0 64);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 
 tr {
