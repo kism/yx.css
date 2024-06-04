@@ -5,6 +5,7 @@
   font-weight: 400;
   src: local(""), url("../fonts/noto-sans-display-v10-latin-regular.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
 /* noto-sans-display-500 - latin */
 @font-face {
   font-family: "Noto Sans Display";
@@ -12,6 +13,7 @@
   font-weight: 500;
   src: local(""), url("../fonts/noto-sans-display-v10-latin-500.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
 /* noto-sans-display-700 - latin */
 @font-face {
   font-family: "Noto Sans Display";
@@ -19,6 +21,7 @@
   font-weight: 700;
   src: local(""), url("../fonts/noto-sans-display-v10-latin-700.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
 /* noto-sans-display-italic - latin */
 @font-face {
   font-family: "Noto Sans Display";
@@ -26,6 +29,7 @@
   font-weight: 400;
   src: local(""), url("../fonts/noto-sans-display-v10-latin-italic.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
 /* noto-sans-display-500italic - latin */
 @font-face {
   font-family: "Noto Sans Display";
@@ -33,6 +37,7 @@
   font-weight: 500;
   src: local(""), url("../fonts/noto-sans-display-v10-latin-500italic.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
 /* noto-sans-display-700italic - latin */
 @font-face {
   font-family: "Noto Sans Display";
@@ -48,6 +53,7 @@
   font-weight: 300;
   src: local(""), url("../fonts/fira-code-v12-latin-300.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
 /* fira-code-regular - latin */
 @font-face {
   font-family: "Fira Code";
@@ -55,6 +61,7 @@
   font-weight: 400;
   src: local(""), url("../fonts/fira-code-v12-latin-regular.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
 /* fira-code-500 - latin */
 @font-face {
   font-family: "Fira Code";
@@ -62,6 +69,7 @@
   font-weight: 500;
   src: local(""), url("../fonts/fira-code-v12-latin-500.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
 /* fira-code-600 - latin */
 @font-face {
   font-family: "Fira Code";
@@ -69,6 +77,7 @@
   font-weight: 600;
   src: local(""), url("../fonts/fira-code-v12-latin-600.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
 /* fira-code-700 - latin */
 @font-face {
   font-family: "Fira Code";
@@ -79,7 +88,7 @@
 
 /* A C T U A L  C S S */
 
-@media screen and (max-width: 400px) {
+@media screen and (width <= 400px) {
   img {
     margin-right: 16px;
   }
@@ -89,26 +98,25 @@ body {
   font-family: "Noto Sans Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
-  background-color: rgb(26, 26, 26);
-  color: rgb(200, 200, 200);
+  background-color: rgb(26 26 26);
+  color: rgb(200 200 200);
   line-height: 1.5;
 }
 
 main {
   display: block;
-  margin: 0 0;
+  margin: 0;
   max-width: 650px;
-  padding: 0px 16px 16px;
+  padding: 0 16px 16px;
 }
 
 hr {
   border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgb(255 255 255 / 12%);
   display: block;
   margin-top: 16px;
   margin-bottom: 16px;
   width: 100%;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
   overflow: visible;
@@ -120,9 +128,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fira Code", "Consolas", "Lucida Console", monospace;
+  font-family: "Fira Code", Consolas, "Lucida Console", monospace;
   line-height: 1.2;
-  color: rgb(220, 220, 220);
+  color: rgb(220 220 220);
 }
 
 h1 {
@@ -143,9 +151,9 @@ h3 {
   margin: 16px 0 4px;
   font-style: italic;
 }
+
 h4 {
   font-size: 16px;
-  font-weight: 600;
   margin: 16px 0 4px;
   font-weight: bold;
 }
@@ -159,7 +167,6 @@ h5 {
 
 h6 {
   font-size: 12px;
-  font-weight: 400;
   margin: 16px 0 4px;
   font-weight: bold;
 }
@@ -176,8 +183,11 @@ ol {
   vertical-align: baseline;
 }
 
+table {
+  margin-bottom: 16px;
+}
+
 h1 + table,
-h2 + table,
 h2 + table,
 h3 + table,
 h4 + table,
@@ -206,8 +216,8 @@ img {
 
 code,
 pre {
-  font-family: "Fira Code", "Consolas", "Lucida Console", monospace;
-  background: #222222;
+  font-family: "Fira Code", Consolas, "Lucida Console", monospace;
+  background: #222;
   display: block;
   font-size: 13px;
   margin: 13px 0;
@@ -223,15 +233,16 @@ video {
 }
 
 small {
-  color: rgba(255, 255, 255, 0.54);
+  color: rgb(255 255 255 / 54%);
   vertical-align: bottom;
 }
 
 footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgb(255 255 255 / 12%);
   padding: 16px 0;
   text-align: center;
 }
+
 footer p {
   margin-bottom: 0;
 }
@@ -255,11 +266,11 @@ sub {
 }
 
 mark {
-  background: #eeeeee;
+  background: #eee;
 }
 
 a:link {
-  color: rgb(0, 128, 128);
+  color: rgb(0 128 128);
   text-decoration: none;
 }
 
@@ -267,42 +278,36 @@ a:hover,
 a:focus {
   text-decoration: underline;
 }
+
 a:visited {
-  color: rgb(128, 0, 64);
-}
-
-table {
-  margin-bottom: 16px;
-}
-
-thead tr {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.12);
+  color: rgb(128 0 64);
 }
 
 tr {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 2px solid rgb(255 255 255 / 12%);
+  margin-bottom: 8px;
+}
+
+thead tr {
+  border-bottom: 1px solid rgb(255 255 255 / 12%);
+  background: rgb(255 255 255 / 12%);
 }
 
 caption {
   padding: 8px 0;
 }
 
-thead th {
-  border: 0;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
-  text-align: left;
-}
-
-tr {
-  margin-bottom: 8px;
-}
-
 th,
 td {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgb(0 0 0 / 12%);
   padding: 16px;
   vertical-align: inherit;
+}
+
+thead th {
+  border: 0;
+  border-bottom: 2px solid rgb(0 0 0 / 12%);
+  text-align: left;
 }
 
 tfoot tr {
@@ -310,32 +315,35 @@ tfoot tr {
 }
 
 tfoot td {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgb(0 0 0 / 54%);
   font-size: 8px;
   font-style: italic;
   padding: 16px 4px;
 }
 
 /* Ruining the classless dream */
-@media (min-width: 400px) {
+@media (width >= 400px) {
   .container {
     width: 85%;
     padding: 0;
   }
 }
 
-@media (min-width: 550px) {
+@media (width >= 550px) {
   .container {
     width: 80%;
   }
+
   .column,
   .columns {
     margin-left: 4%;
   }
+
   .column:first-child,
   .columns:first-child {
     margin-left: 0;
   }
+
   .one-half.column {
     width: 48%;
   }
@@ -349,6 +357,7 @@ tfoot td {
   padding: 0 20px;
   box-sizing: border-box;
 }
+
 .column,
 .columns {
   width: 100%;
