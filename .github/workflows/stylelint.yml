@@ -1,0 +1,11 @@
+---
+name: Stylelint
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: stylelint
+        uses: actions-hub/stylelint@master
