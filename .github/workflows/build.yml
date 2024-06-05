@@ -14,7 +14,7 @@ jobs:
 
       - name: Read built script
         id: getbuiltscript
-        run: cat dist/grab.sh
+        run: echo "::set-output name=builtscript::$(cat dist/grab.sh)"
 
       - name: Update Nightly Release
         uses: andelf/nightly-release@main
@@ -24,5 +24,5 @@ jobs:
           tag_name: main
           name: "Nightly Release $$"
           prerelease: true
-          body: "${{ steps.getbuiltscript }}"
+          body: "${{ steps.getbuiltscript.outputs.builtscript }}"
           files: dist/grab.sh
