@@ -12,5 +12,5 @@ Kieran's Minimal and almost Classless CSS
 Navigate to the folder you want the static folder to be placed in.
 
 ```bash
-curl https://github.com/kism/zy.css/releases/download/main/grab.sh | bash
+curl -LsS https://github.com/kism/zy.css/releases/download/main/grab.sh | bash
 ```
