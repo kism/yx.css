@@ -12,11 +12,9 @@ jobs:
       - name: Build deplyoment script
         run: bash build.sh
 
-      # - name: Store the distribution packages
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: grab.sh
-      #     path: dist/grab.sh
+      - name: Read built script
+        id: getbuiltscript
+        run: cat dist/grab.sh
 
       - name: Update Nightly Release
         uses: andelf/nightly-release@main
@@ -26,5 +24,5 @@ jobs:
           tag_name: main
           name: "Nightly Release $$"
           prerelease: true
-          body: "Nightly"
+          body: "${{ steps.getbuiltscript }}"
           files: dist/grab.sh
