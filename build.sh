@@ -9,6 +9,8 @@ do_heading() {
 
 }
 
+
+
 OUTFILE="dist/grab.sh"
 BASEURL="https://raw.githubusercontent.com/kism/zy.css/main"
 SCRIPTSTART=$(
@@ -30,6 +32,10 @@ else
 fi
 EOF
 )
+
+# Start the build script
+set -e # Turn on errors
+mkdir dist # Its in .gitignore
 
 echo "$SCRIPTSTART" >$OUTFILE
 
