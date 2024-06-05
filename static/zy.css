@@ -63,8 +63,8 @@ body {
   font-size: 18px;
   font-weight: 500;
   max-width: 700px;
-  background-color: rgb(0 0 0);
-  color: rgb(200 200 200);
+  background-color: black;
+  color: silver;
   line-height: 1.5;
   padding-left: 15px;
   padding-right: 15px;
@@ -90,7 +90,7 @@ h5,
 h6 {
   font-family: "Fira Code", Consolas, "Lucida Console", monospace;
   line-height: 1.2;
-  color: rgb(220 220 220);
+  color: silver;
 }
 
 h1 {
@@ -194,7 +194,7 @@ video {
 }
 
 small {
-  color: rgb(255 255 255 / 54%);
+  color: silver;
   vertical-align: bottom;
 }
 
@@ -226,11 +226,11 @@ sub {
 }
 
 mark {
-  background: #eee;
+  background: silver;
 }
 
 a:link {
-  color: rgb(0 128 128);
+  color: teal;
   text-decoration: none;
 }
 
@@ -240,7 +240,7 @@ a:focus {
 }
 
 a:visited {
-  color: rgb(128 0 64);
+  color: maroon;
 }
 
 tr {
@@ -259,14 +259,14 @@ caption {
 
 th,
 td {
-  border-bottom: 1px solid rgb(0 0 0 / 12%);
+  border-bottom: 1px solid black;
   padding: 16px;
   vertical-align: inherit;
 }
 
 thead th {
   border: 0;
-  border-bottom: 2px solid rgb(0 0 0 / 12%);
+  border-bottom: 2px solid black;
   text-align: left;
 }
 
@@ -275,7 +275,7 @@ tfoot tr {
 }
 
 tfoot td {
-  color: rgb(0 0 0 / 54%);
+  color: black;
   font-size: 8px;
   font-style: italic;
   padding: 16px 4px;
@@ -339,7 +339,7 @@ input[type="button"] {
   display: inline-block;
   height: 30px;
   padding: 0 15px;
-  color: #bbb;
+  color: silver;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -348,9 +348,9 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #004040;
+  background-color: teal;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid silver;
   cursor: pointer;
   box-sizing: border-box;
   min-width: 100px;
@@ -366,9 +366,9 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
-  background-color: #008080;
+  color: grey;
+  border-color: silver;
+  background-color: teal;
   outline: 0;
 }
 
@@ -384,9 +384,9 @@ textarea,
 select {
   height: 23px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #464646;
-  border: 1px solid #d1d1d1;
-  color: #bbb;
+  background-color: grey;
+  border: 1px solid white;
+  color: silver;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;

@@ -1,10 +1,10 @@
 # zy.css
 
-Kieran's Minimal and almost Classless CSS
+Kieran's minimal and almost classless CSS
 
 ## Goals
 
-* Use 16 colours
+* Use 16 colours <https://johndecember.com/html/spec/color16.html>
 * Have a non-web developer (me) understand every line of it
 
 ## Deploy
