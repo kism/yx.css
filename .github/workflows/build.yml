@@ -12,8 +12,19 @@ jobs:
       - name: Build deplyoment script
         run: bash build.sh
 
-      - name: Store the distribution packages
-        uses: actions/upload-artifact@v4
+      # - name: Store the distribution packages
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: grab.sh
+      #     path: dist/grab.sh
+
+      - name: Update Nightly Release
+        uses: andelf/nightly-release@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: grab.sh
-          path: dist/grab.sh
+          tag_name: main
+          name: "Nightly Release $$"
+          prerelease: true
+          body: "Nightly"
+          files: dist/grab.sh
