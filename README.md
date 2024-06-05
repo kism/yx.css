@@ -11,6 +11,7 @@ Kieran's minimal and almost classless CSS
 ### Todo
 
 * <https://web.archive.org/web/20230319011535/https://vistaserv.net/blog/90s-fonts-modern-browsers>
+<https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/>
 
 ## Deploy
 
