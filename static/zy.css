@@ -282,7 +282,7 @@ tfoot td {
 }
 
 ::selection {
-  color: silver;
+  color: white;
   background: teal;
 }
 
