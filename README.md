@@ -7,6 +7,10 @@ Kieran's Minimal and almost Classless CSS
 * Use 16 colours
 * Have a non-web developer (me) understand every line of it
 
-## Build a deploy
+## Deploy
 
+Navigate to the folder you want the static folder to be placed in.
+
+```bash
+curl https://github.com/kism/zy.css/releases/download/main/grab.sh | bash
 ```
