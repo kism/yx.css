@@ -12,6 +12,9 @@ jobs:
       - name: Build deplyoment script
         run: bash build.sh
 
+      - name: Check deplyoment script
+        run: cat dist/grab.sh
+
       - name: Read built script
         id: getbuiltscript
         run: echo "builtscript=```curl https://github.com/kism/zy.css/releases/download/main/grab.sh | bash```" >> $GITHUB_OUTPUT
