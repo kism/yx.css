@@ -15,10 +15,6 @@ jobs:
       - name: Check deplyoment script
         run: cat dist/grab.sh
 
-      - name: Read built script
-        id: getbuiltscript
-        run: echo "builtscript=```curl https://github.com/kism/zy.css/releases/download/main/grab.sh | bash```" >> $GITHUB_OUTPUT
-
       - name: Update Nightly Release
         uses: andelf/nightly-release@main
         env:
@@ -27,5 +23,5 @@ jobs:
           tag_name: main
           name: "Nightly Release $$"
           prerelease: true
-          body: "${{ steps.getbuiltscript.outputs.builtscript }}"
+          body: "```curl https://github.com/kism/zy.css/releases/download/main/grab.sh | bash```"
           files: dist/grab.sh
