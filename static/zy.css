@@ -193,14 +193,25 @@ img {
 
 code,
 pre {
-  font-family: "Fira Code", Consolas, "Lucida Console", monospace;
-  background: #222;
-  display: block;
+  font-family: "Fira Code", "Consolas", "Lucida Console", monospace;
   font-size: 13px;
-  margin: 13px 0;
-  padding: 13px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #2d2d2d;
+  display: inline-block;
+  padding: 0px 4px;
+}
+
+.code-block {
+  display: block;
+  max-width: 100%;
+  width: fit-content;
+  padding: 2px 10px;
+  margin: 3px 0;
 }
 
 embed,
